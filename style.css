@@ -23,20 +23,32 @@ nav {
 .search {
   display: flex;
   align-items: right;
-  background-color: gray;
-  padding: 10px 20px;
-  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 .searchInput {
   border: none;
-  background-color: transparent;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  width: 0;
 }
 
-.searchInput::placeholder {
-  color: lightgray;
+.searchInput:hover{
+  width: 200;
+  padding: 5px 5px;
+  font-size: 18px;
 }
 
+.searchIcon{
+ cursor: pointer;
+ border: none;
+ font-size: 18ps
+ ;
+ 
+}
 
 .navBottom {
   display: flex;
@@ -460,9 +472,13 @@ footer {
   }
 
   .search{
-    display: none;
+    display: block;
   }
-
+  .searchInput:hover{
+    width: 150;
+    padding: 5px 5px;
+    font-size: 18px;
+  }
   .navBottom{
     flex-wrap: wrap;
   }
